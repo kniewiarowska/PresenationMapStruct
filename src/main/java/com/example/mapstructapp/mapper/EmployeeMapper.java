@@ -36,5 +36,4 @@ public interface EmployeeMapper {
         It is also necessary to add @InheritInverseConfiguration in TaskMapper.
      */
 
-
 }

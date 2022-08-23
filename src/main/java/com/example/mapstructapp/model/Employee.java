@@ -3,7 +3,6 @@ package com.example.mapstructapp.model;
 import lombok.Data;
 
 import java.time.LocalDate;
-import java.util.List;
 
 @Data
 public class Employee {
