@@ -11,7 +11,7 @@ public class EmployeeDTO {
     private String firstName;
     private String lastName;
     private int age;
-    private String department;
+    private DepartmentFullName department;
     private LocalDate brithDate;
     private String contractType;
     private List<TaskDTO> tasks;

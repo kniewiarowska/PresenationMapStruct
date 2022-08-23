@@ -6,7 +6,7 @@ import org.mapstruct.InheritConfiguration;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 
-@Mapper(uses = TaskMapper.class)
+@Mapper(uses = {TaskMapper.class, DepartmentMapper.class})
 public interface EmployeeMapper {
 
     @Mapping(target = "firstName", source = "name")
