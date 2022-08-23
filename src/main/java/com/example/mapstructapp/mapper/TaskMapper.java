@@ -5,6 +5,9 @@ import com.example.mapstructapp.model.TaskDTO;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 
+import java.util.List;
+import java.util.Set;
+
 @Mapper
 public interface TaskMapper {
 
@@ -14,5 +17,6 @@ public interface TaskMapper {
     @Mapping(target = "importance", constant = "low")
     TaskDTO toTask(Task task);
 
+    List<TaskDTO> toTasksDtoList(Set<Task> tasks);
 
 }
