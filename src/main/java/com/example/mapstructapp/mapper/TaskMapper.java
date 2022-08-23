@@ -2,6 +2,7 @@ package com.example.mapstructapp.mapper;
 
 import com.example.mapstructapp.model.Task;
 import com.example.mapstructapp.model.TaskDTO;
+import org.mapstruct.InheritInverseConfiguration;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 
@@ -12,7 +13,13 @@ public interface TaskMapper {
     @Mapping(target = "description", source = "description")
     @Mapping(target = "storyPoints", source = "days")
     @Mapping(target = "importance", constant = "low")
-    TaskDTO toTask(Task task);
+    TaskDTO toTaskDTO(Task task);
 
+    @InheritInverseConfiguration(name = "toTaskDTO")
+    Task toTask(TaskDTO taskDTO);
 
+    /*
+        Without @InheritInverseConfiguration fields with
+        different fields names won't be mapped.
+     */
 }

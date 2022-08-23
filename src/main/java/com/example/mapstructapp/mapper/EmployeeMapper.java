@@ -2,10 +2,11 @@ package com.example.mapstructapp.mapper;
 
 import com.example.mapstructapp.model.Employee;
 import com.example.mapstructapp.model.EmployeeDTO;
+import org.mapstruct.InheritInverseConfiguration;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 
-//@Mapper(uses = TaskMapper.class)
+@Mapper(uses = TaskMapper.class)
 public interface EmployeeMapper {
 
     @Mapping(target = "firstName", source = "employee.name")
@@ -13,9 +14,9 @@ public interface EmployeeMapper {
     @Mapping(target = "age", source = "age")
     @Mapping(target = "department", source = "department")
     @Mapping(target = "task", source = "task")
-    EmployeeDTO toEmployeeDto(Employee employee);
+    EmployeeDTO toEmployeeDTO(Employee employee);
 
-    /*
+     /*
         We have three options to map "Task to TaskDTO"
 
         1) We can write a mapper - -> not recommended:
@@ -25,4 +26,15 @@ public interface EmployeeMapper {
          @Mapper(uses = TaskMapper.class)
 
      */
+
+    @InheritInverseConfiguration(name = "toEmployeeDTO")
+    Employee toEmployee(EmployeeDTO employeeDTO);
+
+    /*
+        We can inherit configuration to create reverse mapping
+        by usage of @InheritInverseConfiguration annotation.
+        It is also necessary to add @InheritInverseConfiguration in TaskMapper.
+     */
+
+
 }
