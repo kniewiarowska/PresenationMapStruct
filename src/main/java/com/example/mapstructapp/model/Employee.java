@@ -1,4 +1,4 @@
-package com.example.mapstructapp.ex1.model;
+package com.example.mapstructapp.model;
 
 import lombok.Data;
 
@@ -13,6 +13,6 @@ public class Employee {
     private int age;
     private Department department;
     private LocalDate brithDate;
-    private List<Task> tasks;
+    private Task task;
 
 }
