@@ -1,7 +1,7 @@
-package com.example.mapstructapp.ex1.mapper;
+package com.example.mapstructapp.mapper;
 
-import com.example.mapstructapp.ex1.model.Employee;
-import com.example.mapstructapp.ex1.model.EmployeeDTO;
+import com.example.mapstructapp.model.Employee;
+import com.example.mapstructapp.model.EmployeeDTO;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 

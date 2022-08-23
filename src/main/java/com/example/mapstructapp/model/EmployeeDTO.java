@@ -1,4 +1,4 @@
-package com.example.mapstructapp.ex1.model;
+package com.example.mapstructapp.model;
 
 import lombok.Data;
 
