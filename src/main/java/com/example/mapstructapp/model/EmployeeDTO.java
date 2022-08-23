@@ -14,6 +14,6 @@ public class EmployeeDTO {
     private String department;
     private LocalDate brithDate;
     private String contractType;
-    private List<Task> tasks;
+    private List<TaskDTO> tasks;
 
 }
