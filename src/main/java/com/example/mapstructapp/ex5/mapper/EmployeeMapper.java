@@ -1,7 +1,7 @@
-package com.example.mapstructapp.mapper;
+package com.example.mapstructapp.ex5.mapper;
 
-import com.example.mapstructapp.model.Employee;
-import com.example.mapstructapp.model.EmployeeDTO;
+import com.example.mapstructapp.ex5.model.Employee;
+import com.example.mapstructapp.ex5.model.EmployeeDTO;
 import org.mapstruct.InheritConfiguration;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
@@ -32,4 +32,6 @@ public interface EmployeeMapper {
         Mapper with @InheritConfiguration can for example override or add new mapping.
 
      */
+
+
 }
