@@ -4,10 +4,8 @@ import com.example.mapstructapp.ex6.mapper.BossMapperImpl;
 import com.example.mapstructapp.ex6.model.Boss;
 import com.example.mapstructapp.ex6.model.Department;
 import com.example.mapstructapp.ex6.model.Employee;
-import org.assertj.core.util.Strings;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import org.junit.platform.commons.util.StringUtils;
 
 import java.time.LocalDate;
 
