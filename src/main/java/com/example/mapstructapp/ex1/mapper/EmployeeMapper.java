@@ -2,9 +2,10 @@ package com.example.mapstructapp.ex1.mapper;
 
 import com.example.mapstructapp.ex1.model.Employee;
 import com.example.mapstructapp.ex1.model.EmployeeDTO;
+import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 
-
+@Mapper
 public interface EmployeeMapper {
 
     @Mapping(target = "firstName", source = "name")
