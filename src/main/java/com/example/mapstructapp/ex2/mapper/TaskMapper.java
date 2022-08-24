@@ -1,7 +1,7 @@
-package com.example.mapstructapp.mapper;
+package com.example.mapstructapp.ex2.mapper;
 
-import com.example.mapstructapp.model.Task;
-import com.example.mapstructapp.model.TaskDTO;
+import com.example.mapstructapp.ex2.model.Task;
+import com.example.mapstructapp.ex2.model.TaskDTO;
 import org.mapstruct.InheritInverseConfiguration;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
