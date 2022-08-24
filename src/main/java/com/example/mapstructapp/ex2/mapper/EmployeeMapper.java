@@ -43,7 +43,7 @@ public interface EmployeeMapper {
     Employee toEmployee(EmployeeDTO employeeDTO);
 
     /*
-        We can inherit configuration to create reverse mapping
+        We can inherit inverse configuration to create reverse mapping
         by usage of @InheritInverseConfiguration annotation.
         It is also necessary to add @InheritInverseConfiguration in TaskMapper.
      */
