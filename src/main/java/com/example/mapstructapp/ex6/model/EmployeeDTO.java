@@ -1,6 +1,8 @@
-package com.example.mapstructapp.ex1.model;
+package com.example.mapstructapp.ex6.model;
 
 import lombok.Data;
+
+import java.util.List;
 
 @Data
 public class EmployeeDTO {
@@ -10,6 +12,6 @@ public class EmployeeDTO {
     private int age;
     private String department;
     private String contractType;
-    private TaskDTO task;
+    private List<TaskDTO> tasks;
 
 }

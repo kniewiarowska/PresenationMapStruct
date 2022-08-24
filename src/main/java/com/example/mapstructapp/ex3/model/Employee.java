@@ -1,5 +1,5 @@
 
-package com.example.mapstructapp.ex1.model;
+package com.example.mapstructapp.ex3.model;
 
 import lombok.Data;
 
