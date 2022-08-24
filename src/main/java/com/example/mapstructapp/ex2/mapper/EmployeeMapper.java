@@ -2,6 +2,7 @@ package com.example.mapstructapp.ex2.mapper;
 
 import com.example.mapstructapp.ex2.model.Employee;
 import com.example.mapstructapp.ex2.model.EmployeeDTO;
+import org.mapstruct.InheritConfiguration;
 import org.mapstruct.InheritInverseConfiguration;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
@@ -27,6 +28,17 @@ public interface EmployeeMapper {
 
      */
 
+    @InheritConfiguration
+    @Mapping(target = "task", ignore = true)
+    EmployeeDTO mapToEmployeeDtoWithoutTasks(Employee employee);
+
+      /*
+
+        We can inherit configuration to write a mapper ith different behavior.
+        Mapper with @InheritConfiguration can for example override or add new mapping.
+
+     */
+
     @InheritInverseConfiguration(name = "toEmployeeDTO")
     Employee toEmployee(EmployeeDTO employeeDTO);
 
@@ -35,5 +47,6 @@ public interface EmployeeMapper {
         by usage of @InheritInverseConfiguration annotation.
         It is also necessary to add @InheritInverseConfiguration in TaskMapper.
      */
+
 
 }

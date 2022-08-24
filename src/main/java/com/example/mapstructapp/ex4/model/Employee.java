@@ -1,9 +1,9 @@
-package com.example.mapstructapp.ex5.model;
+
+package com.example.mapstructapp.ex4.model;
 
 import lombok.Data;
 
 import java.time.LocalDate;
-import java.util.Set;
 
 @Data
 public class Employee {
@@ -13,6 +13,6 @@ public class Employee {
     private int age;
     private Department department;
     private LocalDate brithDate;
-    private Set<Task> tasks;
+    private Task task;
 
 }

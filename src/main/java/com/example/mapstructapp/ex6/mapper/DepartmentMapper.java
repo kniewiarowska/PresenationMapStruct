@@ -1,7 +1,7 @@
-package com.example.mapstructapp.ex5.mapper;
+package com.example.mapstructapp.ex6.mapper;
 
-import com.example.mapstructapp.ex5.model.Department;
-import com.example.mapstructapp.ex5.model.DepartmentFullName;
+import com.example.mapstructapp.ex6.model.Department;
+import com.example.mapstructapp.ex6.model.DepartmentFullName;
 import org.mapstruct.Mapper;
 import org.mapstruct.MappingConstants;
 import org.mapstruct.ValueMapping;
