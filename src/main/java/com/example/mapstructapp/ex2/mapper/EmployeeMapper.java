@@ -30,12 +30,12 @@ public interface EmployeeMapper {
 
     @InheritConfiguration
     @Mapping(target = "task", ignore = true)
-    EmployeeDTO mapToEmployeeDtoWithoutTasks(Employee employee);
+    EmployeeDTO mapToEmployeeDtoWithoutTask(Employee employee);
 
       /*
 
-        We can inherit configuration to write a mapper ith different behavior.
-        Mapper with @InheritConfiguration can for example override or add new mapping.
+        We can inherit configuration to write a mapper with different behavior.
+        Mapper with @InheritConfiguration can for example override behavior or add new mapping for new filed.
 
      */
 

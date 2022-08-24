@@ -1,11 +1,11 @@
 package com.example.mapstructapp.ex6.mapper;
 
-import com.example.mapstructapp.ex6.model.Task;
-import com.example.mapstructapp.ex6.model.TaskDTO;
-import org.mapstruct.*;
+import com.example.mapstructapp.ex5.model.Task;
+import com.example.mapstructapp.ex5.model.TaskDTO;
+import org.mapstruct.Mapper;
+import org.mapstruct.Mapping;
 
 import java.util.List;
-import java.util.Set;
 
 @Mapper
 public interface TaskMapper {
@@ -16,12 +16,5 @@ public interface TaskMapper {
     @Mapping(target = "importance", constant = "low")
     TaskDTO toTaskDTO(Task task);
 
-    @InheritConfiguration(name = "toTaskDTO")
-    @Mapping(target = "importance", constant = "high")
-    @Named("toTaskDtoWithHighImportance")
-    TaskDTO toTaskDTOWithHighImportance(Task task);
-
-    @Named("tasksDTOWithHighImportance")
-    @IterableMapping(qualifiedByName = "toTaskDtoWithHighImportance")
-    List<TaskDTO> toTasksDtoListWithHighImportance(Set<Task> tasks);
+    List<TaskDTO> toTaskDTOList(List<Task> tasks);
 }

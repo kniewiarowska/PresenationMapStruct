@@ -7,9 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class MapStructAppApplication {
 
     public static void main(String[] args) {
-
         SpringApplication.run(MapStructAppApplication.class, args);
-
     }
 
 }

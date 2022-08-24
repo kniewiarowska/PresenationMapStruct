@@ -1,7 +1,7 @@
 package com.example.mapstructapp.ex2.mapper;
 
-import com.example.mapstructapp.ex6.model.Task;
-import com.example.mapstructapp.ex6.model.TaskDTO;
+import com.example.mapstructapp.ex5.model.Task;
+import com.example.mapstructapp.ex5.model.TaskDTO;
 import org.mapstruct.*;
 
 @Mapper

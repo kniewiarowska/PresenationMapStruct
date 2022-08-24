@@ -1,4 +1,4 @@
-package com.example.mapstructapp.ex6.model;
+package com.example.mapstructapp.ex5.model;
 
 public enum DepartmentFullName {
     PAYMENTS,
